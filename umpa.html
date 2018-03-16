@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>MAROON 5 The Band</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+	  font-family: 'Permanent Marker', cursive;
+
+      color: #581845;
+	  font-size: 20px;
+	  background: url("http://getwallpapers.com/wallpaper/full/e/f/3/266401.jpg");
+	  background-size: cover;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #900c3F;
+  }
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #FF3370;
+  }
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #33D8FF;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+
+  }  
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+  .well {
+  	  font-family: 'Pacifico', cursive;
+	  color:#FF5733;
+	  font-size:30px;
+	  background: url("https://cdn.pixabay.com/photo/2017/08/04/10/36/background-2579719_960_720.jpg");
+	  background-size: cover;
+  }
+  </style>
+</head>
+<body id="BAND" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#BAND"> MAROON 5</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#band">BAND</a></li>
+        <li><a href="#tour">TOUR</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li> 
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://i.ytimg.com/vi/nn5aL1RMYeM/maxresdefault.jpg" alt="New York" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Tacoma</h3>
+          <p>TACOMA DOME.</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="https://www.billboard.com/files/media/maroon-5-press-photo-cr-Travis-Schneider-2017-a-billboard-1548.jpg" alt="Chicago" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>PHOENIX</h3>
+          <p>TALKING STICK RESORT ARENA</p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="https://pmcvariety.files.wordpress.com/2017/08/maroon-5-decade-award.jpg?w=700&h=393&crop=1">
+        <div class="carousel-caption">
+          <h3>CANTON, OH, USA</h3>
+          <p>TOM BENSON HALL OF FAME STADIUM</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h3>MAROON 5 </h3>
+  <p><em>We love music!</em></p>
+  <p>Maroon 5 is an American pop rock band from Los Angeles, California.[11][12] It currently consists of lead vocalist Adam Levine, keyboardist and rhythm guitarist Jesse Carmichael, bassist Mickey Madden, lead guitarist James Valentine, drummer Matt Flynn, keyboardist PJ Morton and multi-instrumentalist Sam Farrar.
+
+Original members Adam Levine, Jesse Carmichael, Mickey Madden and drummer Ryan Dusick first came together as Kara's Flowers in 1994, while they were still in high school. The band self-released an album called We Like Digging?, then signed to Reprise Records and released the album The Fourth World in 1997. After the album garnered a tepid response, the band parted ways with the record label and the members attended college.</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Adam Levine</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="https://i.pinimg.com/originals/7e/ce/c1/7ecec1aeac05aa8d7407c4871a450f51.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo" class="collapse">
+        <p>Guitarist</p>
+        <p>Lead singer</p>
+        <p>Band started in 2001</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Jesse carmichael</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd9W_8gm1Snlg-IzY8Bqi0rrlU9e1LGX3xKDEcTsn4oV_Ryl1l" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>Piano</p>
+        <p>Songwriter</p>
+        <p>Solo project call 1863</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>James Valentine</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="https://www.guitarworld.com/.image/t_share/MTUwNjEyMjIxMDgwMzE1MjU2/james621jpg.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>Lead guitar</p>
+        <p>Percussionist</p>
+        <p>Played the saxophone in Highschool</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (TOUR Section) -->
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">TOUR DATES</h3>
+    <p class="text-center">BUY YOUR TICKETS NOW.<br>OR THEY WILL BE SOLD OUT!</p>
+    <ul class="list-group">
+      <li class="list-group-item">MAY <span class="label label-danger">Sold Out!</span></li>
+      <li class="list-group-item">JUNE <span class="label label-danger">Sold Out!</span></li> 
+      <li class="list-group-item">OCTOBER <span class="badge">3</span></li> 
+    </ul>
+    
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://www.msg.com/wp-content/uploads/2017/08/MSG_LinkedIn_-L-1590x890-OPT-1280x720.jpg" alt="New York" width="400" alt="Paris" width="400" height="300">
+          <p><strong>NEW YORK(Madison Square Garden)</strong></p>
+          <p>Monday 15th october 2018</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="http://static.ticketcity.com/images/americanairlinescenter_vp.jpg" height="300">
+          <p><strong>DALLAS,TA</strong></p>
+          <p>SATURDAY 9th JUNE 2018</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://tacomadome.org/images/tacoma-dome.jpg" alt="San Francisco" width="400" height="300">
+          <p><strong>TACOMA,WA</strong></p>
+          <p>Wednesday 30 may 2018</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+              <button type="submit" class="btn btn-block">Pay 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>IT'S NOT ALWAYS RAINBOWS AND BUTTERFLIES. ITS COMPROMISE THAT MOVES US ALONG'</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Fan? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 5165905396</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: fan@gmail.com</p>
+    </div>
+    <div class="col-md-8">
+<form action="http://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+<input name="skip_WhereToSend" type="hidden" value="your@email.com" />
+<input name="skip_SnapHostID" type="hidden" value="JE5KMKSSGCXY" />
+<input name="skip_WhereToReturn" type="hidden" value="http://www.YourWebsiteAddress.com/ThankYouPage.htm" />
+<input name="skip_Subject" type="hidden" value="Contact Us Form" />
+<input name="skip_ShowUsersIp" type="hidden" value="1" />
+<input name="skip_SendCopyToUser" type="hidden" value="1" />
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.Name.value == "") {alert('Name is required.');frm.Name.focus();return false;}
+if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
+if (frm.Comments.value == "") {alert('Please enter comments or questions.');frm.Comments.focus();return false;}
+if (frm.skip_CaptchaCode.value == "") {alert('Enter web form code.');frm.skip_CaptchaCode.focus();return false;}
+return true; }
+function ReloadCaptchaImage(captchaImageId) {
+var obj = document.getElementById(captchaImageId);
+var src = '' + obj.src;
+obj.src = '';
+var date = new Date();
+var pos = src.indexOf('&rad=');
+if (pos >= 0) { src = src.substr(0, pos); }
+obj.src = src + '&rad=' + date.getTime();
+return false; }
+</script>
+<table border="0" cellpadding="5" cellspacing="0" width="600">
+<tr>
+<td><b>Name*:</b></td>
+<td><input name="Name" type="text" maxlength="60" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Phone number:</b></td>
+<td><input name="PhoneNumber" type="text" maxlength="43" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Email address*:</b></td>
+<td><input name="FromEmailAddress" type="text" maxlength="60" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Comments and questions*:</b></td>
+<td><textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea></td>
+</tr><tr>
+<td colspan="2" align="center"> <br />
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2" style="padding-bottom:18px;">
+<!-- Please check our ProCaptcha service which is ad-free:
+http://www.SnapHost.com/captcha/ProCaptchaOverview.aspx -->
+<a href="http://www.snaphost.com/captcha/" alt="web email form" title="web email form">
+web email form</a></td></tr>
+<tr valign="top"><td> <i>Enter web form code*:</i>
+<input name="skip_CaptchaCode" type="text" style="width:80px;" maxlength="6" />
+</td><td>
+<a href="http://www.snaphost.com/captcha/ReadyForms/ContactUsForm.aspx"><img id="CaptchaImage" alt="Contact Us form" title="HTML code for Contact Us form"
+style="margin-left:20px;"
+src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=JE5KMKSSGCXY&ImgType=2" /></a><br />
+<a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a> </td></tr>
+</table> <br />
+* - required fields. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input name="skip_Submit" type="submit" value="Submit" />
+</td></tr>
+</table><br />
+</form>
+    </div>
+  </div>
+  <br>
+  <h3 class="text-center">GET TO KNOW US!</h3>  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">ADAM</a></li>
+    <li><a data-toggle="tab" href="#menu1">James</a></li>
+    <li><a data-toggle="tab" href="#menu2">Jesse</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>Adam levine, Manager</h2>
+      <p>I have a high self-opinion - I don't need to hide that. I don't need to be self-deprecating. 
+</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2>Lead Guitar</h2>
+      <p>American Grammy-winning musician</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h2>Jesse Carmichael</h2>
+      <p> He graduated University of Nebraska–Lincoln and attended Berklee College.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Add Google Maps -->
+<div id="googleMap"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(47.258728, -122.465973);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBG8pdIiSewpAq4nu7pFOJhozoxOcZU7UI&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+ 
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="https://wallpapercave.com/maroon-5-wallpapers">BUY A WALLPAPER</a></p>
+      <p><a href="https://www.fanfire.com/cgi-bin/WebObjects/Store.woa/wa/artist?artistName=Maroon+5&sourceCode=MARWEB">BUY A MERCH</a></p>
+      <p><a href="https://www.ticketmaster.com/Maroon-5-tickets/artist/824144">BOOK YOUR TICKETS</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>DID YOU KNOW?</h1>
+      <p>In September 2010, Maroon 5 released their third studio album Hands All Over, which was re-released in 2011 to include the single "Moves like Jagger" featuring Christina Aguilera. While the original version of the album received mixed reviews, "Moves like Jagger" reached the number one position on the Billboard Hot 100. The band released their fourth album, Overexposed, on June 26, 2012. All four singles of the album were highly successful on the Billboard Hot 100, including second single "One More Night", which reached number one for 9 weeks straight. In 2012, keyboardist PJ Morton became an official member of the band, after gaining little success with his previous albums as an R&B vocalist..</p>
+      <hr>
+      <h3>POP QUIZ</h3>
+      <p>who is your favorite</p>
+    </div>
+    <div class="col-sm-2 sidenav">
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>SUUUUGGGAAAAA</p>
+</footer>
+
+</body>
+</html>
